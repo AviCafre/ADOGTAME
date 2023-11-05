@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+/* FUENTES
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; */
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #a7f0f0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.dogs{
+    padding: 10px 10px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #b5a6d8;
+    display: block;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: left;
+    align-items: left; 
+  }
+
+  .swiper {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.swiper-button-next{
+    width: 10px;
+    color: black;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+.menu .logo img{
+    width: 30px;
+    border-radius: 20%;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: grey;
+    display:block;
+}
+.menu .navbar ul li a:hover{
+    color: black;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+    margin-top: 100px;
+}
+.enlace{
+    display: inline-block;
+    color: #280b3be1;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.product{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.product img{
+    height: 300px;
+    width: 400px;  
+}
+.imgg{
+    width: 400px;
+}
+.product-txt{
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+    
+}
+.product-txt h4{
+    color: #180325e1;
+    font-size: 25px;
+    margin: 0;
+}
+.product-txt p{
+    width: 450px;
+    color: black;
+    font-size: 20px;
+    padding: 1px;
+    text-align: left;
+}
+.product-txt .p{
+    margin-top: 15px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+/* BOTON DE FORMULARIO */
+.btn-form{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif ;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #673a91f3;
+    color: #000000e1;
+}
+.hacemos{
+    padding: 80px 0px;
+    background-image: /* linear-gradient(rgba(20,20,20,1), rgba(20,20,20,0,9)), */ url(images/pps.jpeg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 400px;
+}
+.hacemos-txt h2{
+    color: #2b0541e1;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+.hacemos-txt p{
+    color: black;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.info{
+    text-align: right;
+}
+hr{
+    border: 3px solid #1d0324e1;
+}
+.footer-txt{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    font-size: 20px;
+}
+
+.footer-txt img{
+    width: 30px 0;
+    text-align: center;
+}
+
+.link ul{ 
+    justify-content: space-between;
+    width: 500px;
+}
+.links li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.links p{
+    color: black;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+.links ul li a{
+    color: #08dba6;
+}
+.socials{
+    margin-top: 25px;
+}
+.socials img{
+    width: 25px;
+    margin: 0 15px;
+}
+
+
+
+@media(max-width:991px) {
+
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: inline-block;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 15px;
+        right: 0;
+        /*background-color: #0d0e0dfb;*/
+         display: inline;
+         align-items: center;
+        justify-content: center;
+          
+    }
+    .menu .navbar ul{
+        font-size: 20px;
+        
+
+    }
+    .menu .navbar ul li{
+        width: 17%;
+        font-size: 15px;
+        color:black;
+        margin:10px;
+        padding: 2px;
+        
+    }
+    .menu .navbar ul li a{
+        color:black;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu .navbar ul li a:hover{
+        color: black;
+    }
+    #menu:checked + .navbar{
+        display: initial;
+    }
+    .header-content{
+        padding: 30px;
+        margin-top: 70px;
+
+    }
+    .slider{
+        width: 420px;
+    }
+    .enlace{
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .dogs{
+        padding: 50px 30px;
+    }
+    .product{
+        text-align: center;
+    }
+    .hacemos{
+        padding: 50px;
+    }
+    .nosotros-txt h2{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .nosotros-txt p{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .nosotros-txt button{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .footer{
+        padding: 30px;
+    }
+    .links{
+        padding: 20px 0;
+    }
+    .links ul{
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .links ul li a{
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+}
